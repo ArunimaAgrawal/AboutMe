@@ -99,7 +99,9 @@ const ProjectsSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 viewport={{ once: true }}
-                className="group bg-background border border-border rounded-lg overflow-hidden hover:shadow-2xl transition-all duration-300"
+                whileHover={{ scale: 1.03, rotate: 0.5 }}
+                whileTap={{ scale: 0.98 }}
+                className="group bg-background border border-border rounded-lg overflow-hidden hover:shadow-2xl hover:shadow-primary/30 hover:-translate-y-1 transition-transform duration-300"
               >
                 {/* Project Image */}
                 <div className="relative h-48 bg-gradient-to-br from-primary/10 to-secondary/10 overflow-hidden">
@@ -208,7 +210,9 @@ const ProjectsSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="group bg-background border border-border rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300"
+                whileHover={{ scale: 1.02, rotate: 0.5 }}
+                whileTap={{ scale: 0.98 }}
+                className="group bg-background border border-border rounded-lg overflow-hidden hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1 transition-transform duration-300"
               >
                 {/* Project Image */}
                 <div className="relative h-32 bg-gradient-to-br from-primary/10 to-secondary/10">
