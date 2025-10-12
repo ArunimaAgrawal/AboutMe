@@ -33,7 +33,7 @@ const HeroSection = () => {
           >
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold">
               <span className="text-foreground">Hi, I'm </span>
-              <span className="text-primary">Alex Johnson</span>
+              <span className="text-primary">Arunima Agrawal</span>
             </h1>
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}

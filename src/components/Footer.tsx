@@ -24,7 +24,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="space-y-4"
           >
-            <h3 className="text-2xl font-bold text-primary">Alex Johnson</h3>
+            <h3 className="text-2xl font-bold text-primary">Arunima Agrawal</h3>
             <p className="text-muted-foreground">
               Full-stack developer passionate about creating amazing digital experiences.
             </p>
@@ -90,7 +90,7 @@ const Footer = () => {
           className="mt-8 pt-8 border-t border-border text-center"
         >
           <p className="text-muted-foreground flex items-center justify-center gap-2">
-            © {currentYear} Alex Johnson. Made with{' '}
+            © {currentYear} Arunima Agrawal. Made with{' '}
             <motion.span
               animate={{ scale: [1, 1.2, 1] }}
               transition={{ duration: 1, repeat: Infinity }}
