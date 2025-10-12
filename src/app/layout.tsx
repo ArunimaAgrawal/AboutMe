@@ -10,13 +10,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Alex Johnson - Full Stack Developer",
-  description: "Portfolio of Alex Johnson, a passionate full-stack developer specializing in modern web technologies.",
+  title: "Arunima Agrawal - Full Stack Developer",
+  description: "Portfolio of Arunima Agrawal, a passionate full-stack developer specializing in modern web technologies.",
   keywords: ["portfolio", "developer", "full-stack", "react", "nextjs", "typescript"],
-  authors: [{ name: "Alex Johnson" }],
+  authors: [{ name: "Arunima Agrawal" }],
   openGraph: {
-    title: "Alex Johnson - Full Stack Developer",
-    description: "Portfolio of Alex Johnson, a passionate full-stack developer specializing in modern web technologies.",
+    title: "Arunima Agrawal - Full Stack Developer",
+    description: "Portfolio of Arunima Agrawal, a passionate full-stack developer specializing in modern web technologies.",
     type: "website",
   },
 };
