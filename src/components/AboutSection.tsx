@@ -18,24 +18,6 @@ const AboutSection = () => {
       period: '2023 - Present',
       description: 'Co-founded and built TypeThinkAI, an AI-powered platform for intelligent content generation and analysis. Led technical architecture, product development, and team building.',
     },
-    {
-      title: 'Senior Full Stack Developer',
-      company: 'TechCorp Inc.',
-      period: 'April 2025 - Present',
-      description: 'Leading development of scalable web applications using React, Node.js, and cloud technologies.',
-    },
-    {
-      title: 'Full Stack Developer',
-      company: 'StartupXYZ',
-      period: '2020 - 2022',
-      description: 'Built and maintained multiple web applications, working closely with design and product teams.',
-    },
-    {
-      title: 'Frontend Developer',
-      company: 'WebAgency',
-      period: '2019 - 2020',
-      description: 'Developed responsive websites and web applications using modern JavaScript frameworks.',
-    },
   ];
 
   const achievements = [
