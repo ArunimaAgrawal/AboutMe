@@ -45,8 +45,8 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'alex@example.com',
-      href: 'mailto:alex@example.com',
+      value: 'arunimaagrawal58@gmail.com',
+      href: 'mailto:arunimaagrawal58@gmail.com',
     },
     {
       icon: Phone,
@@ -63,9 +63,9 @@ const ContactSection = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
+    { icon: Github, href: 'https://github.com/ArunimaAgrawal /ArunimaAgrawal', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/arunima-agrawal-881479226/', label: 'LinkedIn' },
+    { icon: Twitter, href: 'https://x.com/Aru_nima5', label: 'Twitter' },
   ];
 
   return (
