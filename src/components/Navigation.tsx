@@ -25,9 +25,9 @@ const Navigation = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:alex@example.com', label: 'Email' },
+    { icon: Github, href: 'https://github.com/ArunimaAgrawal /ArunimaAgrawal', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/arunima-agrawal-881479226/', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:arunimaagrawal58@gmail.com', label: 'Email' },
   ];
 
   return (
