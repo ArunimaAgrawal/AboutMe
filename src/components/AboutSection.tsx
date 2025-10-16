@@ -1,14 +1,12 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Code, Database, Smartphone, Globe, Award, Users } from 'lucide-react';
+import { Code, Database, Globe, Award, Users } from 'lucide-react';
 
 const AboutSection = () => {
   const skills = [
     { name: 'Frontend', icon: Code, level: 90 },
     { name: 'Backend', icon: Database, level: 85 },
-    { name: 'Mobile', icon: Smartphone, level: 75 },
-    { name: 'DevOps', icon: Globe, level: 70 },
   ];
 
   const experiences = [
