@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -47,12 +47,6 @@ const ContactSection = () => {
       title: 'Email',
       value: 'arunimaagrawal58@gmail.com',
       href: 'mailto:arunimaagrawal58@gmail.com',
-    },
-    {
-      icon: Phone,
-      title: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
     },
     {
       icon: MapPin,
