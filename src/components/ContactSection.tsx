@@ -51,7 +51,7 @@ const ContactSection = () => {
     {
       icon: MapPin,
       title: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Indore, Madhya Pradesh',
       href: '#',
     },
   ];
