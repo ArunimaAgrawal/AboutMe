@@ -90,14 +90,9 @@ const Footer = () => {
           className="mt-8 pt-8 border-t border-border text-center"
         >
           <p className="text-muted-foreground flex items-center justify-center gap-2">
-            © {currentYear} Arunima Agrawal. Made with{' '}
-            <motion.span
-              animate={{ scale: [1, 1.2, 1] }}
-              transition={{ duration: 1, repeat: Infinity }}
-            >
-              <Heart size={16} className="text-red-500 fill-red-500" />
-            </motion.span>{' '}
-            and Next.js
+            © {currentYear} Arunima Agrawal. Made with
+              Patience and Persistence
+            
           </p>
         </motion.div>
       </div>
