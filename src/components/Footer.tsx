@@ -7,7 +7,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/ArunimaAgrawal /ArunimaAgrawal', label: 'GitHub' },
+    { icon: Github, href: 'https://github.com/ArunimaAgrawal', label: 'GitHub' },
     { icon: Linkedin, href: 'https://www.linkedin.com/in/arunima-agrawal-881479226/', label: 'LinkedIn' },
     { icon: Mail, href: 'mailto:arunimaagrawal58@gmail.com', label: 'Email' },
   ];

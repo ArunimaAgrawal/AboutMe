@@ -11,7 +11,7 @@ const ProjectsSection = () => {
       description: 'A full-stack e-commerce solution built with Next.js and Node.js. Features include user authentication, payment processing, inventory management, and admin dashboard.',
       image: '/api/placeholder/600/400',
       techStack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Node.js', 'PostgreSQL', 'Stripe'],
-      githubUrl: 'https://github.com/ArunimaAgrawal /ArunimaAgrawal',
+      githubUrl: 'https://github.com/ArunimaAgrawal',
       liveUrl: 'https://example.com',
       date: '2024',
       category: 'Full Stack',

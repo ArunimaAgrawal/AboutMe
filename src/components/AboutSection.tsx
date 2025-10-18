@@ -6,7 +6,7 @@ import { Code, Database, Globe, Award, Users } from 'lucide-react';
 const AboutSection = () => {
   const skills = [
     { name: 'Frontend', icon: Code, level: 90 },
-    { name: 'Backend', icon: Database, level: 85 },
+    { name: 'Backend', icon: Database, level: 70 },
   ];
 
   const experiences = [
