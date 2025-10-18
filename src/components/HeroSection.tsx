@@ -98,7 +98,7 @@ const HeroSection = () => {
             className="flex justify-center space-x-6 pt-8"
           >
             <motion.a
-              href="https://github.com/ArunimaAgrawal /ArunimaAgrawal"
+              href="https://github.com/ArunimaAgrawal"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, rotate: 5 }}

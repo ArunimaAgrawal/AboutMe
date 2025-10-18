@@ -6,7 +6,7 @@ import { Code, Database, Globe, Award, Users } from 'lucide-react';
 const AboutSection = () => {
   const skills = [
     { name: 'Frontend', icon: Code, level: 90 },
-    { name: 'Backend', icon: Database, level: 85 },
+    { name: 'Backend', icon: Database, level: 70 },
   ];
 
   const experiences = [
@@ -19,9 +19,9 @@ const AboutSection = () => {
   ];
 
   const achievements = [
-    { icon: Award, title: '5+ Years Experience', description: 'In web development' },
-    { icon: Users, title: '50+ Projects', description: 'Successfully delivered' },
-    { icon: Globe, title: 'Global Reach', description: 'Clients worldwide' },
+    { icon: Award, title: '2025 Graduate', description: 'Information Technology Engineering' },
+    { icon: Users, title: '15+ Projects', description: 'Academic & personal projects' },
+    { icon: Globe, title: 'Continuous Learning', description: 'Always exploring new technologies' },
   ];
 
   return (
@@ -38,8 +38,8 @@ const AboutSection = () => {
             About <span className="text-primary">Me</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Passionate developer with a love for creating innovative solutions and 
-            bringing ideas to life through code.
+            Fresh Information Technology graduate passionate about creating innovative solutions 
+            and bringing ideas to life through code.
           </p>
         </motion.div>
 
@@ -54,16 +54,16 @@ const AboutSection = () => {
           >
             <h3 className="text-2xl font-semibold mb-4">My Story</h3>
             <p className="text-muted-foreground leading-relaxed">
-              I'm a passionate full-stack developer with over 5 years of experience in creating 
-              digital solutions that make a difference. My journey began with a curiosity about 
-              how websites work, and it has evolved into a career dedicated to building 
-              innovative applications.
+              I'm a recent Information Technology Engineering graduate with a passion for creating 
+              digital solutions that make a difference. My journey began with curiosity about 
+              how technology works, and through my academic projects and internships, I've 
+              developed a strong foundation in software development.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               I specialize in modern web technologies and enjoy working on projects that 
-              challenge me to learn and grow. When I'm not coding, you can find me exploring 
-              new technologies, contributing to open-source projects, or sharing knowledge 
-              with the developer community.
+              challenge me to learn and grow. As a fresh graduate, I bring enthusiasm, 
+              adaptability, and a hunger to contribute to meaningful projects while 
+              continuously expanding my technical skills.
             </p>
           </motion.div>
 
@@ -135,6 +135,44 @@ const AboutSection = () => {
                 <p className="text-muted-foreground">{exp.description}</p>
               </motion.div>
             ))}
+          </div>
+        </motion.div>
+
+        {/* Key Contributions */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="mb-20"
+        >
+          <h3 className="text-2xl font-semibold text-center mb-12">Key Contributions</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="bg-background border border-border rounded-lg p-6 hover:shadow-lg transition-shadow duration-300"
+            >
+              <h4 className="text-lg font-semibold mb-2 text-primary">Performance Optimization</h4>
+              <p className="text-muted-foreground text-sm">
+                Reduced website load times by 25% through code optimization and implemented efficient caching strategies.
+              </p>
+            </motion.div>
+           
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="bg-background border border-border rounded-lg p-6 hover:shadow-lg transition-shadow duration-300"
+            >
+              <h4 className="text-lg font-semibold mb-2 text-primary">Business Impact</h4>
+              <p className="text-muted-foreground text-sm">
+                Delivered web solutions that increased client online presence by 40% and improved user engagement rates.
+              </p>
+            </motion.div>
           </div>
         </motion.div>
 

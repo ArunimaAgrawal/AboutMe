@@ -51,13 +51,13 @@ const ContactSection = () => {
     {
       icon: MapPin,
       title: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Indore, Madhya Pradesh',
       href: '#',
     },
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/ArunimaAgrawal /ArunimaAgrawal', label: 'GitHub' },
+    { icon: Github, href: 'https://github.com/ArunimaAgrawal', label: 'GitHub' },
     { icon: Linkedin, href: 'https://www.linkedin.com/in/arunima-agrawal-881479226/', label: 'LinkedIn' },
     { icon: Twitter, href: 'https://x.com/Aru_nima5', label: 'Twitter' },
   ];
