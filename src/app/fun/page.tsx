@@ -6,32 +6,8 @@ import { ArrowLeft } from 'lucide-react';
 
 export default function FunPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-cyan-400 via-purple-500 to-pink-500 dark:from-cyan-900 dark:via-purple-950 dark:to-pink-900">
+    <div className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-green-200 via-green-50 to-white dark:from-green-900 dark:via-green-100 dark:to-white">
       {/* Animated gradient orbs */}
-      <motion.div
-        animate={{
-          scale: [1, 1.2, 1],
-          rotate: [0, 180, 360],
-        }}
-        transition={{
-          duration: 20,
-          repeat: Infinity,
-          ease: "linear",
-        }}
-        className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-yellow-400/30 to-orange-500/30 rounded-full blur-3xl"
-      />
-      <motion.div
-        animate={{
-          scale: [1.2, 1, 1.2],
-          rotate: [360, 180, 0],
-        }}
-        transition={{
-          duration: 25,
-          repeat: Infinity,
-          ease: "linear",
-        }}
-        className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-400/30 to-indigo-600/30 rounded-full blur-3xl"
-      />
       <motion.div
         animate={{
           x: [0, 100, 0],
@@ -105,7 +81,7 @@ export default function FunPage() {
                 key={item.id}
                 whileHover={{ y: -6, rotate: 0.25 }}
                 whileTap={{ scale: 0.98 }}
-                className="group relative rounded-2xl p-[1px] bg-gradient-to-br from-white/40 via-white/10 to-transparent shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
+                className="group relative rounded-2xl p-[1px] bg-gradient-to-br from-green-200 via-green-50 to-white shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
               >
                 <div className="relative h-full rounded-2xl bg-background/80 backdrop-blur-md border border-white/20 p-6">
                   <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity bg-[radial-gradient(80%_60%_at_0%_0%,rgba(255,255,255,0.18),transparent_60%),radial-gradient(60%_60%_at_100%_0%,rgba(255,255,255,0.12),transparent_50%)]" />
