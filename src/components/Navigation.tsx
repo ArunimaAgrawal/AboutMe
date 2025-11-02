@@ -3,10 +3,13 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
+import { usePathname } from 'next/navigation';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const isFunPage = pathname === '/fun';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,14 +47,16 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="flex-shrink-0"
-          >
-            <a href="#home" className="text-2xl font-bold text-primary">
-              AJ
-            </a>
-          </motion.div>
+          {!isFunPage && (
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="flex-shrink-0"
+            >
+              <a href="#home" className="text-2xl font-bold text-primary">
+                AJ
+              </a>
+            </motion.div>
+          )}
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
