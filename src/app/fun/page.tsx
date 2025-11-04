@@ -1,12 +1,11 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
+ 
 
 export default function FunPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-green-200 via-green-50 to-white dark:from-green-900 dark:via-green-100 dark:to-white">
+    <div className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-yellow-10 via-yellow-5 to-white dark:from-yellow-900 dark:via-yellow-100 dark:to-white">
       {/* Animated gradient orbs */}
       <motion.div
         animate={{
@@ -18,7 +17,7 @@ export default function FunPage() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-br from-green-400/20 to-emerald-500/20 rounded-full blur-3xl"
+        className="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-br from-yellow-40/20 to-yellow-50/20 rounded-full blur-3xl"
       />
       
       {/* Subtle noise overlay */}
@@ -31,27 +30,19 @@ export default function FunPage() {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <div className="mb-8">
-            <Link
-              href="/"
-              className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white shadow-sm backdrop-blur transition hover:bg-white/20 dark:border-white/10"
-            >
-              <ArrowLeft size={18} />
-              <span>Back to Home</span>
-            </Link>
-          </div>
+          
           
           <motion.h1
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
-            className="text-6xl font-bold mb-3 bg-gradient-to-r from-purple-600 via-pink-600 to-indigo-600 bg-clip-text text-transparent drop-shadow-sm"
+            className="text-6xl font-bold mb-3 text-foreground drop-shadow-sm"
           >
             Fun Zone 🎉
           </motion.h1>
           <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs tracking-wide uppercase text-white/90 shadow-sm backdrop-blur-sm mb-8">
             <span>Playground</span>
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-300 animate-pulse" />
+            <span className="h-1.5 w-1.5 rounded-full bg-yellow-30 animate-pulse" />
           </div>
           
           <motion.p
@@ -81,7 +72,7 @@ export default function FunPage() {
                 key={item.id}
                 whileHover={{ y: -6, rotate: 0.25 }}
                 whileTap={{ scale: 0.98 }}
-                className="group relative rounded-2xl p-[1px] bg-gradient-to-br from-green-200 via-green-50 to-white shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
+                className="group relative rounded-2xl p-[1px] bg-gradient-to-br from-yellow-20 via-yellow-50 to-white shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
               >
                 <div className="relative h-full rounded-2xl bg-background/80 backdrop-blur-md border border-white/20 p-6">
                   <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity bg-[radial-gradient(80%_60%_at_0%_0%,rgba(255,255,255,0.18),transparent_60%),radial-gradient(60%_60%_at_100%_0%,rgba(255,255,255,0.12),transparent_50%)]" />
@@ -93,7 +84,7 @@ export default function FunPage() {
                       <span className="inline-flex items-center rounded-full bg-white/10 px-2.5 py-1 text-xs text-white/90 border border-white/15">
                         Ready soon
                       </span>
-                      <span className="inline-flex h-1.5 w-1.5 rounded-full bg-emerald-400/80 animate-pulse" />
+                      <span className="inline-flex h-1.5 w-1.5 rounded-full bg-yellow-40/80 animate-pulse" />
                     </div>
                   </div>
                 </div>
@@ -101,15 +92,7 @@ export default function FunPage() {
             ))}
           </motion.div>
 
-          <div className="mt-12">
-            <Link
-              href="/"
-              className="inline-flex items-center gap-2 rounded-lg bg-white/15 px-5 py-2.5 text-sm font-medium text-white backdrop-blur border border-white/20 shadow-sm transition hover:bg-white/25"
-            >
-              <ArrowLeft size={18} />
-              <span>Back to Home</span>
-            </Link>
-          </div>
+          
         </motion.div>
       </div>
     </div>
