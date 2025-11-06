@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Sparkles } from 'lucide-react';
+import { Sparkles, HelpCircle } from 'lucide-react';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import ProjectsSection from '@/components/ProjectsSection';
@@ -16,7 +16,7 @@ export default function Home() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.5, duration: 0.5 }}
-        className="fixed top-20 right-4 md:right-8 z-40"
+        className="fixed top-20 right-4 md:right-8 z-40 flex flex-col gap-3"
       >
         <Link href="/fun">
           <motion.div
@@ -27,6 +27,23 @@ export default function Home() {
             <div className="flex items-center gap-2">
               <Sparkles size={20} className="group-hover:rotate-180 transition-transform duration-300" />
               <span className="font-semibold text-sm md:text-base">Fun</span>
+            </div>
+          </motion.div>
+        </Link>
+        
+        {/* Irrelevant Box */}
+        <Link href="/irrelevant">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.7, duration: 0.5 }}
+            whileHover={{ scale: 1.1, rotate: -5 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-gradient-to-r from-gray-500 via-gray-400 to-gray-600 text-white rounded-lg shadow-lg p-4 cursor-pointer group hover:shadow-xl transition-all duration-300"
+          >
+            <div className="flex items-center gap-2">
+              <HelpCircle size={20} className="group-hover:rotate-180 transition-transform duration-300" />
+              <span className="font-semibold text-sm md:text-base">Irrelevant</span>
             </div>
           </motion.div>
         </Link>
