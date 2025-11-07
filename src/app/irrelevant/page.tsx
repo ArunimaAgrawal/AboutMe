@@ -6,7 +6,7 @@ import { ArrowLeft } from 'lucide-react';
 
 export default function IrrelevantPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-gray-100 via-gray-50 to-white dark:from-gray-800 dark:via-gray-900 dark:to-gray-950">
+    <div className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-sky-50 via-blue-50/50 to-white dark:from-blue-950/50 dark:via-sky-950/50 dark:to-gray-950">
       {/* Animated gradient orbs */}
       <motion.div
         animate={{
@@ -18,7 +18,20 @@ export default function IrrelevantPage() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-br from-gray-200/20 to-gray-100/20 rounded-full blur-3xl"
+        className="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-br from-sky-200/20 to-blue-100/15 rounded-full blur-3xl"
+      />
+      <motion.div
+        animate={{
+          x: [0, -80, 0],
+          y: [0, 80, 0],
+        }}
+        transition={{
+          duration: 20,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: 0.5,
+        }}
+        className="absolute top-1/3 right-1/4 w-96 h-96 bg-gradient-to-br from-sky-100/15 to-blue-50/10 rounded-full blur-3xl"
       />
       
       {/* Subtle noise overlay */}
@@ -85,7 +98,7 @@ export default function IrrelevantPage() {
                   key={item.id}
                   whileHover={{ y: -6, rotate: 0.25 }}
                   whileTap={{ scale: 0.98 }}
-                  className="group relative rounded-2xl p-[1px] bg-gradient-to-br from-gray-200 via-gray-50 to-white shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
+                  className="group relative rounded-2xl p-[1px] bg-gradient-to-br from-sky-100/60 via-blue-50/40 to-sky-50/60 shadow-[0_8px_30px_rgba(135,206,235,0.15)]"
                 >
                   <div className="relative h-full rounded-2xl bg-background/80 backdrop-blur-md border border-white/20 p-6">
                     <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity bg-[radial-gradient(80%_60%_at_0%_0%,rgba(255,255,255,0.18),transparent_60%),radial-gradient(60%_60%_at_100%_0%,rgba(255,255,255,0.12),transparent_50%)]" />
