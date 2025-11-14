@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,10 +22,10 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/' },
+    { name: 'Projects', href: '/' },
+    { name: 'Contact', href: '/' },
   ];
 
   const socialLinks = [
@@ -52,9 +53,9 @@ const Navigation = () => {
               whileHover={{ scale: 1.05 }}
               className="flex-shrink-0"
             >
-              <a href="#home" className="text-2xl font-bold text-primary">
+              <Link href="/" className="text-2xl font-bold text-primary">
                 AJ
-              </a>
+              </Link>
             </motion.div>
           )}
 
@@ -62,15 +63,18 @@ const Navigation = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navItems.map((item) => (
-                <motion.a
+                <motion.div
                   key={item.name}
-                  href={item.href}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
                 >
-                  {item.name}
-                </motion.a>
+                  <Link
+                    href={item.href}
+                    className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+                  >
+                    {item.name}
+                  </Link>
+                </motion.div>
               ))}
             </div>
           </div>
@@ -119,17 +123,20 @@ const Navigation = () => {
           >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {navItems.map((item, index) => (
-                <motion.a
+                <motion.div
                   key={item.name}
-                  href={item.href}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1 }}
-                  onClick={() => setIsOpen(false)}
-                  className="block px-3 py-2 text-foreground hover:text-primary transition-colors duration-200 font-medium"
                 >
-                  {item.name}
-                </motion.a>
+                  <Link
+                    href={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className="block px-3 py-2 text-foreground hover:text-primary transition-colors duration-200 font-medium"
+                  >
+                    {item.name}
+                  </Link>
+                </motion.div>
               ))}
               <div className="flex items-center space-x-4 px-3 py-2">
                 {socialLinks.map((social) => (

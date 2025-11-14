@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import Link from 'next/link';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -42,12 +43,12 @@ const Footer = () => {
             <ul className="space-y-2">
               {['Home', 'About', 'Projects', 'Contact'].map((link) => (
                 <li key={link}>
-                  <a
-                    href={`#${link.toLowerCase()}`}
+                  <Link
+                    href="/"
                     className="text-muted-foreground hover:text-primary transition-colors duration-200"
                   >
                     {link}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
