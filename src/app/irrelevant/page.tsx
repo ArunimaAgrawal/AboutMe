@@ -90,6 +90,50 @@ export default function IrrelevantPage() {
                 </motion.div>
               ))}
             </div>
+
+            {/* Irrelevant Facts Section */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.8, duration: 0.5 }}
+              className="mt-16"
+            >
+              <h2 className="text-3xl font-bold mb-8 text-foreground text-center">
+                Completely Irrelevant Facts 🎯
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {[
+                  { fact: 'Bananas are berries, but strawberries aren\'t.', emoji: '🍌' },
+                  { fact: 'A group of flamingos is called a "flamboyance".', emoji: '🦩' },
+                  { fact: 'Octopuses have three hearts and blue blood.', emoji: '🐙' },
+                  { fact: 'Wombat poop is cube-shaped.', emoji: '💩' },
+                  { fact: 'Honey never spoils. You could eat 3000-year-old honey!', emoji: '🍯' },
+                  { fact: 'A single cloud can weigh more than a million pounds.', emoji: '☁️' },
+                  { fact: 'Sharks have been around longer than trees.', emoji: '🦈' },
+                  { fact: 'Dolphins have names for each other.', emoji: '🐬' },
+                  { fact: 'A day on Venus is longer than its year.', emoji: '🪐' },
+                  { fact: 'There are more possible games of chess than atoms in the observable universe.', emoji: '♟️' },
+                  { fact: 'Cleopatra lived closer in time to the Moon landing than to the construction of the Great Pyramid.', emoji: '👑' },
+                  { fact: 'A "jiffy" is an actual unit of time: 1/100th of a second.', emoji: '⏱️' },
+                ].map((item, idx) => (
+                  <motion.div
+                    key={idx}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 0.9 + idx * 0.05, duration: 0.3 }}
+                    whileHover={{ scale: 1.05, rotate: 1 }}
+                    className="group relative rounded-xl p-4 bg-background/60 backdrop-blur-sm border border-white/10 hover:bg-background/80 hover:border-white/20 transition-all duration-300"
+                  >
+                    <div className="flex items-start gap-3">
+                      <span className="text-2xl flex-shrink-0">{item.emoji}</span>
+                      <p className="text-sm text-foreground/80 leading-relaxed group-hover:text-foreground transition-colors">
+                        {item.fact}
+                      </p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
           </motion.div>
         </motion.div>
       </div>
