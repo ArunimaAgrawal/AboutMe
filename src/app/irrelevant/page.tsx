@@ -1,8 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
 
 export default function IrrelevantPage() {
   return (
@@ -44,25 +42,6 @@ export default function IrrelevantPage() {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          {/* Back button */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            className="mb-8 flex justify-start"
-          >
-            <Link href="/">
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-background/80 backdrop-blur-md border border-border hover:bg-background transition-colors"
-              >
-                <ArrowLeft size={18} />
-                <span>Back to Home</span>
-              </motion.div>
-            </Link>
-          </motion.div>
-
           <motion.h1
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
